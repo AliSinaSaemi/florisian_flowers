@@ -1,0 +1,18 @@
+{
+  "name": "flower",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss assets/sass/main.scss assets/css/main.css --output-style nested --source-map true",
+    "build-minify": "node-sass --include-path scss assets/sass/main.scss assets/main.min.css --output-style compressed --source-map true",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "sepehr akbarzadeh",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "bootstrap-v4-rtl": "^4.3.1-0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10"
+  }
+}
