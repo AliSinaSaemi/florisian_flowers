@@ -67,7 +67,7 @@ $('.owl-one').owlCarousel({
     rtl: true,
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     autoplay: false,
     autoplayTimeout: 10000,
     smartSpeed: 900,
