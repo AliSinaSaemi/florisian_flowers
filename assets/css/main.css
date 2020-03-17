@@ -390,7 +390,8 @@ footer {
     position: relative; }
     .post .operations .btn-primary {
       position: absolute;
-      right: 30px; }
+      right: 30px;
+      bottom: -5px; }
 
 .btn-primary {
   background-color: #f8bbd0;
@@ -447,6 +448,9 @@ footer {
       .pagination-container ul li a {
         color: #000;
         transition-duration: 0.4s; }
+        .pagination-container ul li a.num {
+          position: relative;
+          top: 8px; }
         .pagination-container ul li a:hover, .pagination-container ul li a:focus, .pagination-container ul li a:active {
           color: #fff;
           text-decoration: none;
@@ -833,6 +837,86 @@ footer {
   .card:hover .top {
     height: 19px; }
 
+.detail-blog {
+  padding: 70px 0; }
+  .detail-blog h2 {
+    font-size: 30px;
+    margin: 25px 0;
+    margin-top: 50px;
+    color: #334d5c; }
+  .detail-blog .info {
+    color: #b4b4b4;
+    font-size: 14px;
+    margin-bottom: 30px; }
+    .detail-blog .info span {
+      margin-right: 30px; }
+  .detail-blog .search-container {
+    box-shadow: 6px 5px 14px #c1c1c1;
+    border-radius: 10px; }
+    .detail-blog .search-container input[type="text"] {
+      padding: 10px;
+      font-size: 17px;
+      border: none;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px; }
+    .detail-blog .search-container button {
+      float: right;
+      padding: 6px 10px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer; }
+    .detail-blog .search-container form {
+      display: flex;
+      flex-direction: row;
+      border-radius: 9px;
+      overflow: hidden; }
+      .detail-blog .search-container form input {
+        width: 80%; }
+      .detail-blog .search-container form button {
+        width: 20%; }
+  .detail-blog p {
+    font-size: 17px;
+    color: #b4b4b4;
+    line-height: 34px;
+    text-align: justify; }
+  .detail-blog img {
+    border-radius: 5px; }
+  .detail-blog .tags span {
+    color: #495057;
+    background-color: #d4d4d4;
+    text-align: center;
+    padding: 8px 31px;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-top: 20px; }
+  .detail-blog .tags div.col-6 {
+    margin-bottom: 20px; }
+  .detail-blog .social-media {
+    display: flex;
+    flex-direction: row-reverse; }
+    .detail-blog .social-media .share-button {
+      margin-right: auto;
+      color: #909090;
+      background-color: #f0f0f0;
+      padding: 10px;
+      width: 135px;
+      border-radius: 22px;
+      text-align: center;
+      font-size: 20px; }
+      .detail-blog .social-media .share-button i {
+        margin-right: 13px; }
+    .detail-blog .social-media .pagination button {
+      height: 49px;
+      width: 49px;
+      font-size: 25px;
+      border: none;
+      text-align: center;
+      border-radius: 50%; }
+    .detail-blog .social-media .pagination .nums {
+      margin-top: 12px;
+      margin: auto 14px; }
+
 @media (max-width: 1420px) {
   .carousel-pagination {
     position: absolute;
@@ -890,7 +974,14 @@ footer {
 
   .post img {
     border-radius: 0;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+
+  .share-responsive a {
+    padding: 20px;
+    border: radius;
+    border-radius: 50%;
+    background-color: #dee2de;
+    color: #a5a5a5; } }
 @media (max-width: 564px) {
   .carousel-toolbox {
     right: 15px; }
@@ -906,9 +997,26 @@ footer {
   .crumb h2 {
     margin-bottom: 70px; }
   .crumb ol {
-    bottom: 0; }
+    bottom: 0;
+    padding-left: 0; }
     .crumb ol a {
       font-size: 20px; }
+
+  .detail-blog .social-media .pagination button {
+    height: 35px;
+    width: 35px;
+    font-size: 20px; }
+
+  .detail-blog .social-media .pagination .nums {
+    margin: 0 14px;
+    margin-top: 8px; }
+
+  .detail-blog .social-media .share-button {
+    width: 120px;
+    font-size: 14px; }
+
+  .crumb ol li a {
+    font-size: 17px; }
 
   footer .content {
     padding: 50px 15px; }

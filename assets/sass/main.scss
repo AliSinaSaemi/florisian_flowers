@@ -551,6 +551,7 @@ footer {
     .btn-primary {
       position: absolute;
       right: 30px;
+      bottom: -5px;
     }
   }
 }
@@ -636,7 +637,10 @@ footer {
       a {
         color: #000;
         transition-duration: 0.4s;
-
+        &.num {
+          position: relative;
+          top: 8px;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -1206,6 +1210,111 @@ $github: #000000;
   }
 }
 
+.detail-blog {
+  padding: 70px 0;
+  h2 {
+    font-size: 30px;
+    margin: 25px 0;
+    margin-top: 50px;
+    color: #334d5c;
+  }
+  .info {
+    color: #b4b4b4;
+    font-size: 14px;
+    margin-bottom: 30px;
+    span {
+      margin-right: 30px;
+    }
+  }
+  .search-container {
+    box-shadow: 6px 5px 14px #c1c1c1;
+    border-radius: 10px;
+    input[type="text"] {
+      padding: 10px;
+      font-size: 17px;
+      border: none;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+
+    button {
+      float: right;
+      padding: 6px 10px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      border-radius: 9px;
+      overflow: hidden;
+      input {
+        width: 80%;
+      }
+      button {
+        width: 20%;
+      }
+    }
+  }
+
+  p {
+    font-size: 17px;
+    color: #b4b4b4;
+    line-height: 34px;
+    text-align: justify;
+  }
+  img {
+    border-radius: 5px;
+  }
+  .tags {
+    span {
+      color: #495057;
+      background-color: #d4d4d4;
+      text-align: center;
+      padding: 8px 31px;
+      border-radius: 5px;
+      margin-right: 15px;
+      margin-top: 20px;
+    }
+    div.col-6 {
+      margin-bottom: 20px;
+    }
+  }
+  .social-media {
+    display: flex;
+    flex-direction: row-reverse;
+    .share-button {
+      margin-right: auto;
+      color: #909090;
+      background-color: #f0f0f0;
+      padding: 10px;
+      width: 135px;
+      border-radius: 22px;
+      text-align: center;
+      font-size: 20px;
+      i {
+        margin-right: 13px;
+      }
+    }
+    .pagination {
+      button {
+        height: 49px;
+        width: 49px;
+        font-size: 25px;
+        border: none;
+        text-align: center;
+        border-radius: 50%;
+      }
+      .nums {
+        margin-top: 12px;
+        margin: auto 14px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1420px) {
   .carousel-pagination {
     position: absolute;
@@ -1288,6 +1397,16 @@ $github: #000000;
     border-radius: 0;
     margin-bottom: 15px;
   }
+
+  .share-responsive {
+    a {
+      padding: 20px;
+      border: radius;
+      border-radius: 50%;
+      background-color: #dee2de;
+      color: #a5a5a5;
+    }
+  }
 }
 
 @media (max-width: 564px) {
@@ -1310,10 +1429,27 @@ $github: #000000;
     }
     ol {
       bottom: 0;
+      padding-left: 0;
       a {
         font-size: 20px;
       }
     }
+  }
+  .detail-blog .social-media .pagination button {
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+  }
+  .detail-blog .social-media .pagination .nums {
+    margin: 0 14px;
+    margin-top: 8px;
+  }
+  .detail-blog .social-media .share-button {
+    width: 120px;
+    font-size: 14px;
+  }
+  .crumb ol li a {
+    font-size: 17px;
   }
   footer .content {
     padding: 50px 15px;
