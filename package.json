@@ -12,7 +12,7 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "bootstrap-v4-rtl": "^4.3.1-0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.18.10"
   }
 }
